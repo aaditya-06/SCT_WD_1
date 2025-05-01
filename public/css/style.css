@@ -1,12 +1,60 @@
 body {
-  background-color: #252525 !important;
+  background-color: #ffffff !important;
   margin: 0;
   padding: 0;
   gap: 0;
 }
 
-.carousel-item img {
-  height: 740px;
-  background-position: center;
-  background-size: cover;
+.carousel-item {
+  position: relative;
+}
+
+.carousel-image-overlay {
+  position: relative;
+}
+
+.carousel-image-overlay img {
+  width: 100%;
+  height: auto;
+  filter: saturate(1.2);
+}
+
+.carousel-image-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+  z-index: 1;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 40px;
+  padding: 15px;
+  border: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 380px;
+  height: 550px;
+}
+
+.card-img-top {
+  height: 435px;
+  object-fit: cover;
 }
