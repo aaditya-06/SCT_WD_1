@@ -15,7 +15,7 @@ body {
 
 .carousel-image-overlay img {
   width: 100%;
-  height: 80vh;
+  height: 83vh;
   filter: saturate(1.1);
 }
 
