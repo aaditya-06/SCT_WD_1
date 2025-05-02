@@ -1,3 +1,21 @@
 <% layout('layouts/boilerplate') %> <%- include("./includes/navbar") %>
 <%-include("./components/banner") %>
-<div><%- include("./components/card") %></div>
+<div class="m-4">
+  <div class="flex items-center justify-center my-0">
+    <h2 class="px-0 text-xl font-bold text-center whitespace-nowrap">
+      MEN'S WEAR
+    </h2>
+    <hr class="w-16 md:w-24 border-gray-300" />
+  </div>
+  <%- include("./components/card") %>
+</div>
+
+<div class="p-4">
+  <div class="flex items-center justify-center my-0">
+    <h2 class="px-0 text-xl font-bold text-center whitespace-nowrap">
+      MEN'S CASUAL WEAR
+    </h2>
+    <hr class="w-16 md:w-24 border-gray-300" />
+  </div>
+  <%- include("./components/card2") %>
+</div>
